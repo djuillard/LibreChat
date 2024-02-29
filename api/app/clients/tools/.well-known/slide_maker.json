@@ -9,7 +9,8 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://plugin.slides.aidocmaker.com/openapi.yaml"
+    "url": "https://plugin.slides.aidocmaker.com/openapi.yaml",
+    "is_user_authenticated": false
   },
   "logo_url": "https://plugin.slides.aidocmaker.com/logo.png",
   "contact_email": "support@level2labs.co",
