@@ -1213,7 +1213,7 @@ class BaseClient {
       this.options.req,
       attachments,
       {
-        provider: this.options.agent?.provider ?? this.options.endpoint,
+        provider: this.options.agent?.provider ?? this.options.endpointType ?? this.options.endpoint,
         endpoint: this.options.agent?.endpoint ?? this.options.endpoint,
         useResponsesApi: this.options.agent?.model_parameters?.useResponsesApi,
       },
@@ -1231,7 +1231,7 @@ class BaseClient {
       this.options.req,
       attachments,
       {
-        provider: this.options.agent?.provider ?? this.options.endpoint,
+        provider: this.options.agent?.provider ?? this.options.endpointType ?? this.options.endpoint,
         endpoint: this.options.agent?.endpoint ?? this.options.endpoint,
       },
       getStrategyFunctions,
@@ -1246,7 +1246,7 @@ class BaseClient {
       this.options.req,
       attachments,
       {
-        provider: this.options.agent?.provider ?? this.options.endpoint,
+        provider: this.options.agent?.provider ?? this.options.endpointType ?? this.options.endpoint,
         endpoint: this.options.agent?.endpoint ?? this.options.endpoint,
       },
       getStrategyFunctions,
